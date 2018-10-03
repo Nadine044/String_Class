@@ -13,9 +13,9 @@ int main() {
 
 	cout << c.getC() << endl;
 
-	a = "bye";
+	b = "bye";
 
-	cout << a.getA() << endl;
+	cout << b.getB() << endl;
 
 	system("pause");
 	return 0;

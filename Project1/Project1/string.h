@@ -3,9 +3,9 @@
 class String {
 private:
 
-	const char* a;
-	const char* b;
-	const char* c;
+	const char* a = nullptr;
+	const char* b = nullptr;
+	const char* c = nullptr;
 
 public:
 
