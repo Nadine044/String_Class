@@ -9,13 +9,13 @@ int main() {
 	String b = "hello";
 	String c(b);
 	
-	cout << b.getB() << endl;
+	cout << b.getWord() << endl;
 
-	cout << c.getC() << endl;
+	cout << c.getWord() << endl;
 
 	b = "bye";
 
-	cout << b.getB() << endl;
+	cout << b.getWord() << endl;
 
 	system("pause");
 	return 0;

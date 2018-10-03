@@ -1,34 +1,30 @@
 //STRING CLASS
-
+#include <string.h>
+#include <assert.h>
 class String {
 private:
 
-	const char* a = nullptr;
-	const char* b = nullptr;
-	const char* c = nullptr;
+	const char* word = nullptr;
+	unsigned int allocated_memory = 0u;
 
 public:
 
 	//CONSTRUCTORS
 
 	String() {};
-	String(const char* word) :a(word), b(word), c(word) {};
+	String(const char* word) :word(word) {
+		assert(word != nullptr);
+		if (word != nullptr) {
+			allocated_memory = strlen(word) + 1;
+			this->word = new char[allocated_memory];
+		}
+	};
 
 	~String() {};
 
 	//FUNCTIONS
 
-	const char* getA() {
-		return a;
+	const char* getWord() {
+		return word;
 	}
-
-	const char* getB() {
-		return b;
-	}
-
-	const char* getC() {
-		return c;
-	}
-
-
 };
