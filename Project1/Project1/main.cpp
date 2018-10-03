@@ -6,8 +6,9 @@ using namespace std;
 int main() {
 
 	String a;
-	String b = "hello";
+	String b("hello");
 	String c(b);
+	//String copy(a, b);
 	
 	cout << b.getWord() << endl;
 
